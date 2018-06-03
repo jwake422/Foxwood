@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  	</script>
+  	<noscript> This website works best with Javascript enabled. Plese go to http://www.enable-javascript.com to enable JavaScript in your browser. </noscript>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<link type="text/css" rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	
+	<style type="text/css">
+		
+
+		label {
+			font-weight: bold;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+
+<div id="header"><h1>Jerb's Restaurant</h1></div>
+	
+	<hr>
+	
+	<div id="nav">
+		<ul class="nav nav-pills">
+			<li class="active"> <a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+			<li><a href="menu.html">Menu</a></li>	
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+	</div>
+	
+	<hr>
+
+<div class="container-fluid">
+		<div class="row">
+		<div class="col-md-3"></div>
+
+<div id="survey" class="col-md-6">
+	<form action="submit.html" method="POST">
+		<label for="name">Name:</label> 
+		<input type="text" id="name" name="name"><br>
+		<label for="email">Email:</label> 
+		<input type="text" id="email" name="email"> <br>
+		<label for="phone">Phone: </label> 
+		<input type="text" id="phone" name="phone"> <br>
+		
+		<label for="inquiry"> Reason for Inquiry</label>
+		<select id="inquiry" name="inquiry">
+			<option value="default">Catering</option>
+			<option value="Private Party">Private Party</option>
+			<option value="Feedback">Feedback</option>
+			<option value="Other">Other</option>
+		</select> <br>
+			<label for="info">Additional Information:</label> <br>
+			<textarea id="info"></textarea> <br>	
+		<fieldset>
+			<legend>Have you been to the restaurant?</legend>
+			<input type="radio" id="no" name="attended" value="yes">
+			<label for="no">No</label>
+			<input type="radio" id="yes" name="attended">
+			<label for="yes">Yes</label>
+		</fieldset>	
+
+		<fieldset>
+			<legend> Best Days to Contact You:</legend>
+			<input type="checkbox" id="M" name="M" value="M">
+			<label for="M">M</label>
+			<input type="checkbox" id="T" name="T" value="T">
+			<label for="T">T</label>
+			<input type="checkbox" id="W" name="W" value="W">
+			<label for="W">w</label>
+			<input type="checkbox" id="R" name="R" value="R">
+			<label for="R">R</label>
+			<input type="checkbox" id="F" name="F" value="F">
+			<label for="F">F</label>
+		</fieldset>
+
+		<input type="submit" name="submit" value="submit">
+	</form>
+	</div>
+
+	<div class="col-md-3"></div>
+	</div>
+</div>
+</div>
+	<footer>
+			<hr>
+
+			<p>10447 JerbJerb Lane, Lexington, KY 40508</p>
+			<p>859-222-8888</p>
+
+		</footer>
+</body>
+</html>

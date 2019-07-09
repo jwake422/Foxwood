@@ -1,2 +1,2 @@
 # Foxwood
-SoftWare Guild Projects
+Software Guild Projects
